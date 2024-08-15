@@ -1,0 +1,13 @@
+mkdir Rehab
+touch one.txt two.txt three.txt four.txt 
+mkdir BAD 
+touch bad.txt
+mv one.txt /home/oscDownloads
+cd Downloads
+cp one.txt copy.txt
+cd Rehab
+nano two.txt
+Rehab ctrl+X  y enter 
+mv three.txt hello.txt 
+rm fout.txt 
+rm -r BAD
