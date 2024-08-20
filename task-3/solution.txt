@@ -36,7 +36,7 @@ echo "20/8/2024 8:00 AM" >> summary.txt
 wc -l summary.txt | tee >> summary.txt
 wc -w report1.md
 wc -c system.log | tee >>summary.txt
-ls |wc -l | tee summary.txt
+ls |wc -l | tee >>  summary.txt
 cat summary.txt
 
 
