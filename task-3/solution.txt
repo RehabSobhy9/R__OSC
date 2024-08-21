@@ -32,7 +32,7 @@ cat ~/project_files/data/data.csv
 unlink link_data.csv
 touch summary.txt
 echo "summary start" > summary.txt
-echo "20/8/2024 8:00 AM" >> summary.txt 
+date >> summary.txt 
 wc -l summary.txt | tee >> summary.txt
 wc -w report1.md
 wc -c system.log | tee >>summary.txt
