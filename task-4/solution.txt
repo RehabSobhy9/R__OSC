@@ -1,0 +1,17 @@
+sudo useradd -m newuser
+sudo groupadd newgroup
+sudo usermod -a -G newgroup newuser
+id -G -n newuser
+cd ~/
+mkdir task_dir
+cd task_dir
+touch sample.txt
+chmod u+rw,g+r,o-rwx sample.txt
+sudo chown newuser sample.txt
+sudo chgrp newgroup sample.txt
+sudo groupdel newgroup
+sudo userdel -rf newuser
+sudo apt update
+sudp apt install lolcat
+echo "I Love OSC" | lolcat
+sudo apt remove lolcat
